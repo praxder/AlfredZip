@@ -101,6 +101,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B7FA1831-C925-47F9-BD90-1F74A4017B52</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08FD5B5A-BD83-42AE-8A63-91C960A72CC7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C12AFD21-36FA-43CF-938E-99B6AA5A87BD</key>
 		<array>
 			<dict>
@@ -157,7 +170,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>08FD5B5A-BD83-42AE-8A63-91C960A72CC7</string>
+				<string>B7FA1831-C925-47F9-BD90-1F74A4017B52</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -238,13 +251,41 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>delimiter</key>
-				<string> </string>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>basePath</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.joinargs</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>708B13BD-20B8-4F93-B580-3B444E283D02</string>
+			<string>B7FA1831-C925-47F9-BD90-1F74A4017B52</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string> </string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>inputFiles</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>9C4FE9C1-7985-4E1D-8EE0-533488F1602E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -273,19 +314,11 @@
 			<dict>
 				<key>delimiter</key>
 				<string> </string>
-				<key>discardemptyarguments</key>
-				<false/>
-				<key>outputas</key>
-				<integer>0</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>inputFiles</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
+			<string>alfred.workflow.utility.joinargs</string>
 			<key>uid</key>
-			<string>9C4FE9C1-7985-4E1D-8EE0-533488F1602E</string>
+			<string>708B13BD-20B8-4F93-B580-3B444E283D02</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -393,7 +426,10 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>echo $inputFiles | xargs zip -rjv -$compression -o $zipFileName</string>
+				<string>cd $basePath
+echo "HELLO: $basePath"
+echo $inputFiles | xargs zip -rv -$compression -o $zipFileName
+echo $inputFiles</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -595,6 +631,17 @@ Credits:
 			<string>Split files into usable list</string>
 			<key>xpos</key>
 			<real>465</real>
+			<key>ypos</key>
+			<real>275</real>
+		</dict>
+		<key>B7FA1831-C925-47F9-BD90-1F74A4017B52</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Save base path for later</string>
+			<key>xpos</key>
+			<real>910</real>
 			<key>ypos</key>
 			<real>275</real>
 		</dict>
