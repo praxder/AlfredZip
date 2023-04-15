@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4FCF6838-E583-406A-925F-0A8E48AFE06E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>524B902A-BACA-4E6C-95EF-650A9D2E48B3</key>
 		<array>
 			<dict>
@@ -102,6 +115,19 @@
 			</dict>
 		</array>
 		<key>B7FA1831-C925-47F9-BD90-1F74A4017B52</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4FCF6838-E583-406A-925F-0A8E48AFE06E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -252,9 +278,9 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string></string>
+				<string>{var:inputFiles}</string>
 				<key>passthroughargument</key>
-				<true/>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>basePath</key>
@@ -338,6 +364,43 @@
 			<string>FAA1B077-B0AB-45BA-A120-591BCDD103A0</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:basePath}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>inputFiles</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>{var:basePath}/</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>4FCF6838-E583-406A-925F-0A8E48AFE06E</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -564,9 +627,20 @@ Credits:
 			<key>note</key>
 			<string>Show prompt asking user where they'd like to store the zipped archive</string>
 			<key>xpos</key>
-			<real>145</real>
+			<real>140</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>635</real>
+		</dict>
+		<key>4FCF6838-E583-406A-925F-0A8E48AFE06E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Replace full path with relative path</string>
+			<key>xpos</key>
+			<real>180</real>
+			<key>ypos</key>
+			<real>460</real>
 		</dict>
 		<key>524B902A-BACA-4E6C-95EF-650A9D2E48B3</key>
 		<dict>
@@ -586,9 +660,9 @@ Credits:
 			<key>note</key>
 			<string>Extract the file name</string>
 			<key>xpos</key>
-			<real>320</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>875</real>
 		</dict>
 		<key>708B13BD-20B8-4F93-B580-3B444E283D02</key>
 		<dict>
@@ -608,9 +682,9 @@ Credits:
 			<key>note</key>
 			<string>Only continue if they hit "Ok"</string>
 			<key>xpos</key>
-			<real>320</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>475</real>
+			<real>665</real>
 		</dict>
 		<key>97A1BDCA-EFBD-409C-8806-751E4573F3FF</key>
 		<dict>
@@ -619,9 +693,9 @@ Credits:
 			<key>note</key>
 			<string>Remove the '.zip' extension, if it exists</string>
 			<key>xpos</key>
-			<real>465</real>
+			<real>460</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>875</real>
 		</dict>
 		<key>9C4FE9C1-7985-4E1D-8EE0-533488F1602E</key>
 		<dict>
@@ -639,11 +713,22 @@ Credits:
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>note</key>
-			<string>Save base path for later</string>
+			<string>Save base path for later and output all the file paths</string>
 			<key>xpos</key>
 			<real>910</real>
 			<key>ypos</key>
 			<real>275</real>
+		</dict>
+		<key>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Save updated inputFiles and output first file</string>
+			<key>xpos</key>
+			<real>320</real>
+			<key>ypos</key>
+			<real>460</real>
 		</dict>
 		<key>C12AFD21-36FA-43CF-938E-99B6AA5A87BD</key>
 		<dict>
@@ -659,16 +744,16 @@ Credits:
 			<key>note</key>
 			<string>Create zip file path</string>
 			<key>xpos</key>
-			<real>610</real>
+			<real>605</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>875</real>
 		</dict>
 		<key>DDAC0F0F-861B-45FE-8276-2D0D9A8F3CEA</key>
 		<dict>
 			<key>xpos</key>
-			<real>140</real>
+			<real>135</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1045</real>
 		</dict>
 		<key>F351FD58-254D-4BC1-9DFB-0C8EFE78D13A</key>
 		<dict>
@@ -677,9 +762,9 @@ Credits:
 			<key>note</key>
 			<string>Show alert that compression is starting</string>
 			<key>xpos</key>
-			<real>430</real>
+			<real>425</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>635</real>
 		</dict>
 		<key>F4330038-4D8F-42E8-A55A-6440E3750B4A</key>
 		<dict>
@@ -688,9 +773,9 @@ Credits:
 			<key>note</key>
 			<string>Split the output of the user-selection popup window</string>
 			<key>xpos</key>
-			<real>180</real>
+			<real>175</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>875</real>
 		</dict>
 		<key>F8567C01-C6B6-4894-B366-211B1E400B03</key>
 		<dict>
@@ -721,9 +806,9 @@ Credits:
 			<key>note</key>
 			<string>Zip files</string>
 			<key>xpos</key>
-			<real>720</real>
+			<real>715</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>845</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
