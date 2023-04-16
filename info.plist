@@ -709,10 +709,11 @@ echo $inputFiles | xargs zip -rv -$compression -o $zipFileName</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Zip files using the built-in Mac `zip` command line utility.
+	<string>Description:
+Zip files using the built-in Mac `zip` command line utility
 
-Todo:
-- Post on Website and Forum
+External Dependencies:
+None
 
 Credits:
 - Zip icons created by Freepik - Flaticon: https://www.flaticon.com/free-icons/zip</string>
