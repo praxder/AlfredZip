@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4FCF6838-E583-406A-925F-0A8E48AFE06E</key>
+		<key>2D73048B-37A3-40C1-A94E-0E7E7E6F5330</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</string>
+				<string>4FCF6838-E583-406A-925F-0A8E48AFE06E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,11 +34,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>524B902A-BACA-4E6C-95EF-650A9D2E48B3</key>
+		<key>4FCF6838-E583-406A-925F-0A8E48AFE06E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9C4FE9C1-7985-4E1D-8EE0-533488F1602E</string>
+				<string>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,7 +64,33 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>524B902A-BACA-4E6C-95EF-650A9D2E48B3</string>
+				<string>7D9B51D9-3291-472B-A578-7A605953DFD9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>718CB8E2-5EBC-4513-BE60-B8EB168A3AC1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8CE1A67-378B-4107-8D1D-036BB1B85013</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7D9B51D9-3291-472B-A578-7A605953DFD9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C4FE9C1-7985-4E1D-8EE0-533488F1602E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -118,7 +144,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4FCF6838-E583-406A-925F-0A8E48AFE06E</string>
+				<string>2D73048B-37A3-40C1-A94E-0E7E7E6F5330</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -144,7 +170,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>708B13BD-20B8-4F93-B580-3B444E283D02</string>
+				<string>C6B98F2F-3A09-423A-ADFF-5DBCCD67D9F9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -158,6 +184,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FD0F3CBE-6137-401C-9F9A-398DAD5C091A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C6B98F2F-3A09-423A-ADFF-5DBCCD67D9F9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>708B13BD-20B8-4F93-B580-3B444E283D02</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -192,7 +231,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F8567C01-C6B6-4894-B366-211B1E400B03</key>
+		<key>F8CE1A67-378B-4107-8D1D-036BB1B85013</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -209,7 +248,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F8567C01-C6B6-4894-B366-211B1E400B03</string>
+				<string>718CB8E2-5EBC-4513-BE60-B8EB168A3AC1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -262,35 +301,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/path.dirname</string>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>dirname $1 | tr -d '\n'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F8567C01-C6B6-4894-B366-211B1E400B03</string>
+			<string>718CB8E2-5EBC-4513-BE60-B8EB168A3AC1</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>{var:inputFiles}</string>
+				<string>{var:inputFiles1}</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict>
-					<key>basePath</key>
-					<string>{query}</string>
-				</dict>
+				<dict/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>B7FA1831-C925-47F9-BD90-1F74A4017B52</string>
+			<string>FAA1B077-B0AB-45BA-A120-591BCDD103A0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -298,7 +342,7 @@
 			<key>config</key>
 			<dict>
 				<key>delimiter</key>
-				<string> </string>
+				<string>;</string>
 				<key>discardemptyarguments</key>
 				<false/>
 				<key>outputas</key>
@@ -318,28 +362,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<true/>
-				<key>variables</key>
-				<dict>
-					<key>inputFiles</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>524B902A-BACA-4E6C-95EF-650A9D2E48B3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>delimiter</key>
-				<string> </string>
+				<string>;</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.joinargs</string>
@@ -351,19 +375,97 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>.+</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string>"$0"</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>C6B98F2F-3A09-423A-ADFF-5DBCCD67D9F9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
-				<string>{var:inputFiles1}</string>
+				<string>{var:inputFilesSplittable}</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict/>
+				<dict>
+					<key>basePath</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>FAA1B077-B0AB-45BA-A120-591BCDD103A0</string>
+			<string>B7FA1831-C925-47F9-BD90-1F74A4017B52</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>inputFilesSplittable</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7D9B51D9-3291-472B-A578-7A605953DFD9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>"</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>F8CE1A67-378B-4107-8D1D-036BB1B85013</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>{var:basePath}/</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>4FCF6838-E583-406A-925F-0A8E48AFE06E</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -391,16 +493,37 @@
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
-				<string>{var:basePath}/</string>
+				<string>;</string>
 				<key>replacestring</key>
-				<string></string>
+				<string> </string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>4FCF6838-E583-406A-925F-0A8E48AFE06E</string>
+			<string>2D73048B-37A3-40C1-A94E-0E7E7E6F5330</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Starting to compress files</string>
+				<key>title</key>
+				<string>Working</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F351FD58-254D-4BC1-9DFB-0C8EFE78D13A</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -427,27 +550,6 @@ end run</string>
 			<string>08FD5B5A-BD83-42AE-8A63-91C960A72CC7</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Starting to compress files</string>
-				<key>title</key>
-				<string>Working</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F351FD58-254D-4BC1-9DFB-0C8EFE78D13A</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -490,9 +592,7 @@ end run</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>cd $basePath
-echo "HELLO: $basePath"
-echo $inputFiles | xargs zip -rv -$compression -o $zipFileName
-echo $inputFiles</string>
+echo $inputFiles | xargs zip -rv -$compression -o $zipFileName</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -609,11 +709,9 @@ echo $inputFiles</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>A relatively simple workflow to zip files using the built-in Mac `zip` command line utility.
+	<string>Zip files using the built-in Mac `zip` command line utility.
 
 Todo:
-- Allow files and folders
-- Allow files and folders with spaces in the name
 - Post on Website and Forum
 
 Credits:
@@ -631,6 +729,17 @@ Credits:
 			<key>ypos</key>
 			<real>635</real>
 		</dict>
+		<key>2D73048B-37A3-40C1-A94E-0E7E7E6F5330</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>Replace ";" with " "</string>
+			<key>xpos</key>
+			<real>185</real>
+			<key>ypos</key>
+			<real>460</real>
+		</dict>
 		<key>4FCF6838-E583-406A-925F-0A8E48AFE06E</key>
 		<dict>
 			<key>colorindex</key>
@@ -638,20 +747,9 @@ Credits:
 			<key>note</key>
 			<string>Replace full path with relative path</string>
 			<key>xpos</key>
-			<real>180</real>
+			<real>310</real>
 			<key>ypos</key>
 			<real>460</real>
-		</dict>
-		<key>524B902A-BACA-4E6C-95EF-650A9D2E48B3</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>note</key>
-			<string>Save files for later</string>
-			<key>xpos</key>
-			<real>320</real>
-			<key>ypos</key>
-			<real>275</real>
 		</dict>
 		<key>605013D4-F0C5-4D4A-9F59-BD0590CC1CCF</key>
 		<dict>
@@ -671,9 +769,31 @@ Credits:
 			<key>note</key>
 			<string>Join files list together</string>
 			<key>xpos</key>
-			<real>180</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>285</real>
+		</dict>
+		<key>718CB8E2-5EBC-4513-BE60-B8EB168A3AC1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Get base path of file</string>
+			<key>xpos</key>
+			<real>785</real>
+			<key>ypos</key>
+			<real>255</real>
+		</dict>
+		<key>7D9B51D9-3291-472B-A578-7A605953DFD9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Save input files for later</string>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>285</real>
 		</dict>
 		<key>8C14B872-8B0F-41E5-A984-AC26D30F4EF6</key>
 		<dict>
@@ -704,29 +824,29 @@ Credits:
 			<key>note</key>
 			<string>Split files into usable list</string>
 			<key>xpos</key>
-			<real>465</real>
+			<real>565</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>285</real>
 		</dict>
 		<key>B7FA1831-C925-47F9-BD90-1F74A4017B52</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>note</key>
-			<string>Save base path for later and output all the file paths</string>
+			<string>Save base path for later and output the splittable files from earlier</string>
 			<key>xpos</key>
-			<real>910</real>
+			<real>1085</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>285</real>
 		</dict>
 		<key>BAEC945D-5F29-4FE1-B6B5-86673A0F3B18</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>note</key>
-			<string>Save updated inputFiles and output first file</string>
+			<string>Save updated inputFiles and output base path</string>
 			<key>xpos</key>
-			<real>320</real>
+			<real>435</real>
 			<key>ypos</key>
 			<real>460</real>
 		</dict>
@@ -747,6 +867,17 @@ Credits:
 			<real>605</real>
 			<key>ypos</key>
 			<real>875</real>
+		</dict>
+		<key>C6B98F2F-3A09-423A-ADFF-5DBCCD67D9F9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Wrap input files in quotation marks.</string>
+			<key>xpos</key>
+			<real>185</real>
+			<key>ypos</key>
+			<real>285</real>
 		</dict>
 		<key>DDAC0F0F-861B-45FE-8276-2D0D9A8F3CEA</key>
 		<dict>
@@ -777,16 +908,16 @@ Credits:
 			<key>ypos</key>
 			<real>875</real>
 		</dict>
-		<key>F8567C01-C6B6-4894-B366-211B1E400B03</key>
+		<key>F8CE1A67-378B-4107-8D1D-036BB1B85013</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>note</key>
-			<string>Get the directory path this file is in</string>
+			<string>Remove quotation marks</string>
 			<key>xpos</key>
-			<real>720</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>285</real>
 		</dict>
 		<key>FAA1B077-B0AB-45BA-A120-591BCDD103A0</key>
 		<dict>
@@ -795,9 +926,9 @@ Credits:
 			<key>note</key>
 			<string>Extract first file</string>
 			<key>xpos</key>
-			<real>610</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>285</real>
 		</dict>
 		<key>FD0F3CBE-6137-401C-9F9A-398DAD5C091A</key>
 		<dict>
