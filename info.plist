@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.praxder.zipfiles</string>
+	<string>com.praxder.zipit</string>
 	<key>category</key>
 	<string>Mine</string>
 	<key>connections</key>
@@ -278,7 +278,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Zip Files</string>
+	<string>ZipIt</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -710,10 +710,10 @@ echo $inputFiles | xargs zip -rv -$compression -o $zipFileName</string>
 	</array>
 	<key>readme</key>
 	<string>Description:
-Zip files using the built-in Mac `zip` command line utility
+- Zip and unzip files using the built-in Mac `zip` and `unzip` command line utility
 
 External Dependencies:
-None
+- None
 
 Credits:
 - Zip icons created by Freepik - Flaticon: https://www.flaticon.com/free-icons/zip</string>
